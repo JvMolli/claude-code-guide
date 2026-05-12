@@ -57,6 +57,12 @@
         </div>
     </div>
 
+<div class="home-bg" aria-hidden="true">
+    <div class="home-orb home-orb--teal"></div>
+    <div class="home-orb home-orb--magenta"></div>
+    <div class="home-grid"></div>
+</div>
+
 <div class="home-toolbar">
     <div class="lang-toggle">
         <button type="button" class="lang-btn" data-lang="es" id="home-lang-es">🇪🇸 ES</button>
@@ -67,58 +73,102 @@
 
 <div class="home-wrap">
     <header class="home-hero">
+        <div class="home-badge">
+            <span class="home-badge-dot"></span>
+            <span id="home-badge-text">Built for developers</span>
+        </div>
         <p class="guide-eyebrow" id="home-eyebrow"></p>
         <h1><span id="home-title"></span></h1>
         <p class="home-sub" id="home-sub"></p>
     </header>
     <div class="home-cards">
-        <a class="home-card" href="learn.html">
+        <a class="home-card home-card--teal" href="learn.html">
+            <span class="home-card-index">01</span>
             <span class="home-card-label" id="home-learn-label"></span>
             <h2 id="home-learn-title"></h2>
             <p id="home-learn-desc"></p>
-            <span class="home-card-cta" id="home-learn-cta"></span>
+            <span class="home-card-meta" id="home-learn-meta"></span>
+            <span class="home-card-cta" id="home-learn-cta">
+                <span class="home-card-cta-text"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
         </a>
-        <a class="home-card" href="practice.html">
+        <a class="home-card home-card--magenta" href="practice.html">
+            <span class="home-card-index">02</span>
             <span class="home-card-label" id="home-practice-label"></span>
             <h2 id="home-practice-title"></h2>
             <p id="home-practice-desc"></p>
-            <span class="home-card-cta" id="home-practice-cta"></span>
+            <span class="home-card-meta" id="home-practice-meta"></span>
+            <span class="home-card-cta" id="home-practice-cta">
+                <span class="home-card-cta-text"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
         </a>
     </div>
-    <p class="home-footer" id="home-footer"></p>
+    <footer class="home-signature">
+        <a class="home-signature-logo" href="https://github.com/JvMolli" target="_blank" rel="noopener" aria-label="Jaime Mollinedo on GitHub">
+            <svg width="32" height="32" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <defs>
+                    <linearGradient id="sigGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#0D9488"/>
+                        <stop offset="55%" stop-color="#1E3A5F"/>
+                        <stop offset="100%" stop-color="#FE236D"/>
+                    </linearGradient>
+                </defs>
+                <rect x="1" y="1" width="40" height="40" rx="10" fill="url(#sigGrad)"/>
+                <rect x="2.5" y="2.5" width="37" height="37" rx="8.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+                <text x="21" y="26" font-family="Outfit, system-ui, sans-serif" font-weight="800" font-style="italic" font-size="17" text-anchor="middle" fill="#FFFFFF" letter-spacing="-0.6">JM</text>
+                <circle cx="13" cy="34" r="1.6" fill="#2DD4BF"/>
+                <circle cx="21" cy="34" r="1.6" fill="#FF5A93"/>
+                <circle cx="29" cy="34" r="1.6" fill="#FFFFFF"/>
+            </svg>
+            <div class="home-signature-text">
+                <span class="home-signature-name" id="home-footer"></span>
+                <span class="home-signature-tag" id="home-tagline"></span>
+            </div>
+        </a>
+    </footer>
 </div>
 
 <script>
 var homeI18n = {
   en: {
+    badge: 'Built for developers',
     eyebrow: "A Developer's Guide",
     title: 'Claude Code Mastery',
     sub: 'Choose your path: structured learning (workflows, methodologies, MCP, SDK) or hands-on practice (51 actionable tips).',
     learnLabel: 'Learn',
     learnTitle: 'Complete guide',
     learnDesc: 'From zero to advanced: installation, workflows, CLAUDE.md, skills, subagents, MCP, hooks, SDD, IDD, JLAD, security and Claude Agent SDK.',
+    learnMeta: '8 sections · ES / EN · presentation deck',
     learnCta: 'Open Learn',
     practiceLabel: 'Practice',
     practiceTitle: '51 tips',
     practiceDesc: 'Hands-on shortcuts, CLI commands, session tricks, and workflow patterns to master Claude Code in the terminal.',
+    practiceMeta: '51 tips · 5 parts · favorites & search',
     practiceCta: 'Open Practice',
-    footer: 'Author: Jaime Mollinedo',
+    footer: 'Jaime Mollinedo',
+    tagline: 'dev · rock · rider',
     welcomeTo: 'Welcome to',
     loaderGuide: "A Developer's Guide"
   },
   es: {
+    badge: 'Hecho para desarrolladores',
     eyebrow: 'Una guía para desarrolladores',
     title: 'Claude Code Mastery',
     sub: 'Elige tu ruta: aprendizaje estructurado (workflows, metodologías, MCP, SDK) o práctica con 51 tips accionables.',
     learnLabel: 'Aprender',
     learnTitle: 'Guía completa',
     learnDesc: 'De cero a avanzado: instalación, workflows, CLAUDE.md, skills, subagents, MCP, hooks, SDD, IDD, JLAD, seguridad y Claude Agent SDK.',
+    learnMeta: '8 secciones · ES / EN · modo presentación',
     learnCta: 'Ir a Aprender',
     practiceLabel: 'Practicar',
     practiceTitle: '51 tips',
     practiceDesc: 'Atajos, comandos CLI, trucos de sesión y patrones de workflow para dominar Claude Code en la terminal.',
+    practiceMeta: '51 tips · 5 partes · favoritos y búsqueda',
     practiceCta: 'Ir a Practicar',
-    footer: 'Autor: Jaime Mollinedo',
+    footer: 'Jaime Mollinedo',
+    tagline: 'dev · rock · rider',
     welcomeTo: 'Bienvenido a',
     loaderGuide: 'Una guía para desarrolladores'
   }
@@ -127,22 +177,30 @@ var homeI18n = {
 function applyHomeLang(lang) {
   var t = homeI18n[lang];
   document.documentElement.lang = lang;
-  document.getElementById('home-eyebrow').textContent = t.eyebrow;
-  document.getElementById('home-title').textContent = t.title;
-  document.getElementById('home-sub').textContent = t.sub;
-  document.getElementById('home-learn-label').textContent = t.learnLabel;
-  document.getElementById('home-learn-title').textContent = t.learnTitle;
-  document.getElementById('home-learn-desc').textContent = t.learnDesc;
-  document.getElementById('home-learn-cta').textContent = t.learnCta;
-  document.getElementById('home-practice-label').textContent = t.practiceLabel;
-  document.getElementById('home-practice-title').textContent = t.practiceTitle;
-  document.getElementById('home-practice-desc').textContent = t.practiceDesc;
-  document.getElementById('home-practice-cta').textContent = t.practiceCta;
-  document.getElementById('home-footer').textContent = t.footer;
-  var lw = document.getElementById('loader-welcome');
-  if (lw) lw.textContent = t.welcomeTo;
-  var lg = document.getElementById('loader-guide');
-  if (lg) lg.textContent = t.loaderGuide;
+  function set(id, value) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = value;
+  }
+  set('home-badge-text', t.badge);
+  set('home-eyebrow', t.eyebrow);
+  set('home-title', t.title);
+  set('home-sub', t.sub);
+  set('home-learn-label', t.learnLabel);
+  set('home-learn-title', t.learnTitle);
+  set('home-learn-desc', t.learnDesc);
+  set('home-learn-meta', t.learnMeta);
+  set('home-practice-label', t.practiceLabel);
+  set('home-practice-title', t.practiceTitle);
+  set('home-practice-desc', t.practiceDesc);
+  set('home-practice-meta', t.practiceMeta);
+  set('home-footer', t.footer);
+  set('home-tagline', t.tagline);
+  var learnCtaText = document.querySelector('#home-learn-cta .home-card-cta-text');
+  if (learnCtaText) learnCtaText.textContent = t.learnCta;
+  var practiceCtaText = document.querySelector('#home-practice-cta .home-card-cta-text');
+  if (practiceCtaText) practiceCtaText.textContent = t.practiceCta;
+  set('loader-welcome', t.welcomeTo);
+  set('loader-guide', t.loaderGuide);
   document.querySelectorAll('.home-toolbar .lang-btn').forEach(function(b) {
     b.classList.toggle('active', b.dataset.lang === lang);
   });
@@ -153,11 +211,17 @@ function switchHomeLang(lang) {
   applyHomeLang(lang);
 }
 
-function toggleHomeDark() {
-  var isDark = document.body.classList.toggle('dark');
-  localStorage.setItem('cc-dark', isDark ? '1' : '');
+function applyHomeTheme(isDark) {
+  document.body.classList.toggle('dark', isDark);
+  document.body.classList.toggle('is-light', !isDark);
   var btn = document.getElementById('home-dark-toggle');
   if (btn) btn.textContent = isDark ? '☀ Light mode' : '☾ Dark mode';
+}
+
+function toggleHomeDark() {
+  var isDark = localStorage.getItem('cc-dark') !== '1';
+  localStorage.setItem('cc-dark', isDark ? '1' : '');
+  applyHomeTheme(isDark);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -168,11 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('home-lang-en').addEventListener('click', function() { switchHomeLang('en'); });
   document.getElementById('home-dark-toggle').addEventListener('click', toggleHomeDark);
 
-  if (localStorage.getItem('cc-dark')) {
-    document.body.classList.add('dark');
-    var b = document.getElementById('home-dark-toggle');
-    if (b) b.textContent = '☀ Light mode';
-  }
+  applyHomeTheme(localStorage.getItem('cc-dark') === '1');
 
   var loader = document.getElementById('loader');
   if (loader) {
