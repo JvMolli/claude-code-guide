@@ -126,7 +126,7 @@ function updateLearnUI(lang) {
 
     var authorPs = document.querySelectorAll('#learn-author p');
     if (authorPs[0]) {
-        authorPs[0].innerHTML = '<strong>' + t.authorLabel + ':</strong> Jaime';
+        authorPs[0].innerHTML = '<strong>' + t.authorLabel + ':</strong> Jaime Mollinedo';
     }
     if (authorPs[1]) {
         authorPs[1].textContent = t.authorTagline;

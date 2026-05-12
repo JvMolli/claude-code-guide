@@ -70,4 +70,4 @@ claude-code-guide/
 
 ## Author
 
-Jaime Mollinedo Gilabert.
+Jaime Mollinedo.

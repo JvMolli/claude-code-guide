@@ -129,7 +129,7 @@ function updateUI(lang) {
     navLinks.forEach(function(a, i) { if (t.navLinks[i] !== undefined) a.textContent = t.navLinks[i]; });
 
     const authorPs = document.querySelectorAll('.author p');
-    if (authorPs[0]) authorPs[0].innerHTML = '<strong>' + t.authorLabel + ':</strong> Jaime';
+    if (authorPs[0]) authorPs[0].innerHTML = '<strong>' + t.authorLabel + ':</strong> Jaime Mollinedo';
     if (authorPs[1]) authorPs[1].textContent = t.authorTagline;
 
     const mainGuide = document.getElementById('main-guide');

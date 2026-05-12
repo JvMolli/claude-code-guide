@@ -325,8 +325,8 @@ const learnSections = [
 const learnPresentation = [
   {
     type: "title",
-    "en": { "eyebrow": "Summary", "title": "Claude Code Mastery", "subtitle": "Complete Guide — executive deck", "foot": "Jaime" },
-    "es": { "eyebrow": "Resumen", "title": "Claude Code Mastery", "subtitle": "Guía completa — presentación ejecutiva", "foot": "Jaime" }
+    "en": { "eyebrow": "Summary", "title": "Claude Code Mastery", "subtitle": "Complete Guide — executive deck", "foot": "Jaime Mollinedo" },
+    "es": { "eyebrow": "Resumen", "title": "Claude Code Mastery", "subtitle": "Guía completa — presentación ejecutiva", "foot": "Jaime Mollinedo" }
   },
   {
     type: "concept",
@@ -446,7 +446,7 @@ const learnPresentation = [
   },
   {
     type: "closing",
-    "en": { "eyebrow": "Next step", "title": "Open the full guide", "body": "Scroll the sections, search, and use this deck as a narrative map.", "linkLabel": "Home", "linkHref": "index.html", "foot": "Claude Code Mastery · Jaime" },
-    "es": { "eyebrow": "Siguiente paso", "title": "Abre la guía completa", "body": "Desplázate por las secciones, busca y usa esta presentación como mapa narrativo.", "linkLabel": "Inicio", "linkHref": "index.html", "foot": "Claude Code Mastery · Jaime" }
+    "en": { "eyebrow": "Next step", "title": "Open the full guide", "body": "Scroll the sections, search, and use this deck as a narrative map.", "linkLabel": "Home", "linkHref": "index.html", "foot": "Claude Code Mastery · Jaime Mollinedo" },
+    "es": { "eyebrow": "Siguiente paso", "title": "Abre la guía completa", "body": "Desplázate por las secciones, busca y usa esta presentación como mapa narrativo.", "linkLabel": "Inicio", "linkHref": "index.html", "foot": "Claude Code Mastery · Jaime Mollinedo" }
   }
 ];
