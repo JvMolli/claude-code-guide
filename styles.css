@@ -1909,6 +1909,13 @@ body.page-home .home-hero {
     100% { opacity: 1; transform: translateY(0); }
 }
 
+.home-badges {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.4rem;
+}
 .home-badge {
     display: inline-flex;
     align-items: center;
@@ -1921,7 +1928,16 @@ body.page-home .home-hero {
     font-weight: 600;
     letter-spacing: 0.04em;
     color: #2DD4BF;
-    margin-bottom: 1.4rem;
+}
+.home-badge--wip {
+    background: rgba(245, 158, 11, 0.12);
+    border-color: rgba(245, 158, 11, 0.35);
+    color: #FBBF24;
+}
+body.page-home.is-light .home-badge--wip {
+    background: rgba(217, 119, 6, 0.1);
+    border-color: rgba(217, 119, 6, 0.32);
+    color: #B45309;
 }
 .home-badge-dot {
     width: 6px;

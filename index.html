@@ -73,9 +73,15 @@
 
 <div class="home-wrap">
     <header class="home-hero">
-        <div class="home-badge">
-            <span class="home-badge-dot"></span>
-            <span id="home-badge-text">Built for developers</span>
+        <div class="home-badges">
+            <div class="home-badge">
+                <span class="home-badge-dot"></span>
+                <span id="home-badge-text">Built for developers</span>
+            </div>
+            <div class="home-badge home-badge--wip">
+                <span aria-hidden="true">🚧</span>
+                <span id="home-wip-text">Work in progress</span>
+            </div>
         </div>
         <p class="guide-eyebrow" id="home-eyebrow"></p>
         <h1><span id="home-title"></span></h1>
@@ -134,6 +140,7 @@
 var homeI18n = {
   en: {
     badge: 'Built for developers',
+    wip: 'Work in progress',
     eyebrow: "A Developer's Guide",
     title: 'Claude Code Mastery',
     sub: 'Choose your path: structured learning (workflows, methodologies, MCP, SDK) or hands-on practice (51 actionable tips).',
@@ -154,6 +161,7 @@ var homeI18n = {
   },
   es: {
     badge: 'Hecho para desarrolladores',
+    wip: 'En construcción',
     eyebrow: 'Una guía para desarrolladores',
     title: 'Claude Code Mastery',
     sub: 'Elige tu ruta: aprendizaje estructurado (workflows, metodologías, MCP, SDK) o práctica con 51 tips accionables.',
@@ -182,6 +190,7 @@ function applyHomeLang(lang) {
     if (el) el.textContent = value;
   }
   set('home-badge-text', t.badge);
+  set('home-wip-text', t.wip);
   set('home-eyebrow', t.eyebrow);
   set('home-title', t.title);
   set('home-sub', t.sub);
